@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YashglobalSolutions</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  <style>
+ 
+ html{
+   scroll-behavior: smooth;
+ }
+ body{
+   margin:0px;
+   padding:0px;
+   position: relative;
+   z-index:0;
+   
+ }
+ .wrapper{
+   margin-top:80;
+   width:100%;
+   height:50px;
+   background-color: black;
+   color:white
+   margin-bottom:50px;
+   border-bottom:2px solid black;
+   
+ }   
+ .wrapper i{
+   font-size:35px;
+   float: left;
+   margin-top:10px;
+   color:white;
+ }
+  
+  .wrapper h2{
+    font-size:20px;
+    position:absolute;
+    top:0px;
+    left:50px;
+    color:white;
+  }
+  
+  
+  .ads{
+    width:100%;
+    height:280px;
+    background-image:url('images/bg1.jpg');
+   background-repeat:no-repeat;
+  background-size:100% 100%;
+  animation:slider 15s infinite linear;
+  display:flex;
+  align-items: flex-end;
+  justify-content:center; 
+
+  }
+  
+  @keyframes slider{
+    0%{background-image: url('images/bg2.jpg')}
+    25%{background-image: url('images/bg3.jpg')}
+    50%{background-image: url('images/bg4.jpg')}
+    75%{background-image: url('images/bg5.jpg')}
+  }
+  
+  
+  .ads h3{
+    width:200px;
+    padding:10px;
+    border:2px solid white;
+    color:white;
+    font-weight:bolder;
+  }
+  .Services{
+    width:100%;
+    height:2100px;
+    border-bottom:2px solid black;
+  }
+  
+  .Services h2{
+    color:maroon;
+  }
+  
+  .Services img{
+    border-radius: 10px;
+    box-shadow:10px 10px 10px grey;
+  }
+  
+  .AboutUs{
+    width:100%;
+    height: 800px;
+    border-bottom:2px solid black; 
+    background-color:maroon;
+    color:white;
+    
+  }
+  
+  .AboutUs h2{
+    color:white;
+  }
+  
+  .AboutUs h4 {
+    color:white;
+    font-size:40px;
+  }
+  
+  .AboutUs p{
+    color:white;
+    font-weight:bold;
+    font-size: 15px;
+  }
+  
+  .AboutUs img{
+    border-radius:50%;
+    border:3px solid white;
+  }
+  
+  .followUs{
+    width:100%;
+    border-bottom:2px solid black;
+  }
+  
+  .followUs h2{
+    color:maroon;
+  }
+  
+  .follow{
+     width:100%;
+     height:120px;
+     display:flex;
+     justify-content: space-evenly;
+     align-items: center;
+    
+  }
+  
+  .logo-1{
+    
+    width:55px;
+    height:40px;
+    background-image: url('images/facebook-6.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+  }
+  
+  .logo-2{
+    
+    width:55px;
+    height:40px;
+    background-image: url('images/instagram-12.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+  }
+  
+  .logo-3{
+    
+    width:55px;
+    height:40px;
+    background-image: url('images/gmail-3.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+  }
+  
+  .dreamJob{
+    width: 100%
+    height:550px;
+    border-bottom:2px solid black;
+    
+  }
+  
+  .dreamJob input{
+    width:300px;
+    height:40px;
+    border:none;
+    border-bottom: 2px solid maroon;
+    margin-bottom:20px;
+    font-size:20px;
+  }
+  .dreamJob button{
+    width:150px;
+    height:30px;
+    color:white;
+    font-weight:bold;
+    background-color: blue;
+    font-size:15px;
+    border-radius:5px ;
+    margin-bottom:15px;
+  }
+  
+  .dreamJob h2{
+    color:maroon;
+  }
+  
+  .card {
+    width:100%;
+    height:250px;
+    position:relative;
+    top:5px;
+    left:15px;
+  }
+  
+  .cardContent{
+    width:90%;
+    height:220;
+    
+  }
+  #sidebar{
+    width:80%;
+    height:620px;
+    background-color: black;
+    color:white;
+    display:none;
+    justify-content:center;
+    position:absolute;
+    z-index:1;
+    top:50px;
+  }
+  
+  #sidebar li{
+    margin-top:15px;
+    margin-bottom:25px;
+    list-style-type: none;
+    display:block;
+    font-size:20px;
+    
+  }
+  #sidebar ul{
+    position:absolute;
+    top:10px;
+    left:50px;
+  }
+  
+  #sidebar a{
+    color:white;
+    text-decoration-line: none;
+  }
+  
+  .topbtn{
+    width:45px;
+    height:45px;
+    background-image:url('images/top.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    position:fixed;
+    top:600px;
+    left:300px;
+    z-index:3;
+    color:white;
+    border-radius:50%;
+  }
+  
+.topbtn a{
+  text-decoration-line:none;
+  color:white;
+}
+  .footer{
+    width:100%;
+    height:150px;
+background-color: black;
+color:white;
+
+align-items: center;
+justify-content: center;
+  }
+  
+ .business {
+   width:100%;
+   height:400px;
+ }
+ 
+ .business h2{
+   
+   color:maroon;
+ }
+ 
+ 
+.business input {
+   width: 300px;
+   height: 40px;
+   border: none;
+   border-bottom: 2px solid maroon;
+   margin-bottom: 20px;
+   font-size: 20px;
+ }
+ 
+ .business button {
+   width: 150px;
+   height: 30px;
+   color: white;
+   font-weight: bold;
+   background-color: blue;
+   font-size: 15px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   margin-top:20px;
+ }
+ 
+ .business select{
+   width:250px;
+   height:35px;
+   margin-bottom:15px;
+ }
+  </style>
+  
+</head>
+
+<body>
+   <a href="#header">
+  <div class="topbtn">
+  
+  
+  </div>
+  </a>
+  <div class="wrapper" id="header">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+    <h2>YASH GLOBAL CONSULTANTS</h2>
+  </div>
+  </div>
+  <div id="sidebar">
+    <ul>
+      <li><i class="fa fa-times" onclick="closeBar()" id="icon" ></i></li>
+      <a href="#header" >
+      <li>HOME</li></a>
+      <a href="#Services">
+      <li onclick="closeBar()">SERVICES</li></a>
+      <a href="#about">
+      <li onclick="closeBar()">ABOUT US</li></a>
+      <a href="#followUs">
+      <li onclick="closeBar()">FOLLOW US</li>
+      </a>
+      <a href="#dreamJob">
+      <li onclick="closeBar()">APPLY NOW</li></a>
+    </ul>
+    </div>
+  <div class="ads">
+    <h3>Get your Dream Job</h3>
+  </div>
+  <div class="Services">
+    <center>
+      <h2 id="Services">Services</h2>
+      <br>
+      <img src="images/housekeeping.jpg" width="250px" height="250px"><br>
+      <h3>Housekeeping</h3>
+      <br>
+      <img src="images/hotelstaff.jpg" width="250px" height="250px" data-aos="zoom-in"><br>
+      <h3>Hotel staff</h3>
+      <br>
+      <img src="images/bg5.jpg" width="250px" height="250px" data-aos="zoom-in"><br>
+      <h3>Hospital staff</h3>
+      <br>
+      <img src="images/dataoperator.jpg" width="250px" height="250px" data-aos="zoom-in"><br>
+      <h3>Data Entry operator</h3>
+      <br>
+      <img src="images/bg4.jpg" width="250px" height="250px" data-aos="zoom-in" data-aos="zoom-in"><br>
+      <h3>Courier Boy</h3>
+      <br>
+      <img src="images/accounts.jpg" width="250px" height="250px" data-aos="zoom-in"><br>
+      <h3>Accountant</h3>
+      
+    </center>
+  </div>
+  <div class="AboutUs" data-aos="zoom-in">
+    <center>
+    <h2 id="about">About us</h2>
+    
+    <h3>Yash Global Consultants</h3><p> is a Manpower providing pvt company<div><div></div></div></p>
+    <img src="images/yash.jpg" width="250px"
+    height="250px">
+    <p>It is owned and runned By Mr Yash  shinde (Managing Director)</p>
+    <h1>We understand your needs and Standards</h1>
+    <h4>100%</h4>
+    <h2>Job Guarantee</h2>
+    </center>
+  </div>
+  <div class="followUs" data-aos="zoom-in" id="followUs">
+    <center><h2 >
+      Follow us on</h2>
+    </center>
+    <div class="follow">
+  <div class="logo-1"></div>
+  <div class="logo-2"></div>
+  <div class="logo-3"></div>
+  </div>
+  <center><h5>yashglobalconsultats0@gmail.com</h5></center>
+  </div>
+  <div class="dreamJob" id="dreamJob" data-aos="zoom-in">
+    <center><h2>Dream Job</h2></center>
+    <center>
+      <form action="yashglobalservice.html">
+    <input type="text"placeholder="Enter full name"><br>
+    <input type="email" placeholder="Enter your mail">
+  <br>
+    <input type="tel" placeholder="Enter Mob no"><br>
+      <input type="text" placeholder="Enter Location"><br>
+      <input type="file" placeholder="Upload Cv"><br>
+      <button>Apply Now</button>
+    </center>
+    </form>
+    </div>
+    <div class="business" data-aos="zoom-in">
+      <center>
+        <h2>Business Enquiry</h2>
+      </center>
+      <center>
+        <form>
+          <input type="text" placeholder="Enter Company name"><br>
+          <input type="email" placeholder="Enter company Mail id"><br>
+          <select>
+            <option>Select</option>
+            <option>
+              Manpower
+            </option>
+          </select><br>
+          <select>
+            <option>Requirement</option>
+            <option>
+              10-50
+            </option>
+            <option>
+              50-100
+            </option>
+            <option>
+              100-200
+            </option>
+            <option>
+              200+
+            </option>
+          </select><br>
+          <button>Submit</button>
+        </form>
+      </center>
+      </div>
+    
+  
+  <div class="footer" >
+    <div class="fcopyright">
+      <center>
+        <p>Copyright <i class="fa fa-copyright"></i> All rights reserved.</p><br>
+        <h6>Designed & Devloped By Alankar Sonawane</h6><br>
+       
+      </center>
+  </div>
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    
+    const icon = document.getElementById('icon');
+    
+   
+   function showBar(){
+     sidebar.style.display="block";
+   }
+   
+   function closeBar(){
+     sidebar.style.display="none";
+   }
+   
+  </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
