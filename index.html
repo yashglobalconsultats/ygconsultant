@@ -195,18 +195,11 @@
     color:maroon;
   }
   
-  .card {
-    width:100%;
-    height:250px;
-    position:relative;
-    top:5px;
-    left:15px;
-  }
-  
-  .cardContent{
-    width:90%;
-    height:220;
-    
+  .dreamJob select{
+    width:250px;
+    height:35px;
+    border-bottom:2px solid maroon;
+    margin-bottom: 15px;
   }
   #sidebar{
     width:80%;
@@ -266,7 +259,7 @@ color:white;
   
  .business {
    width:100%;
-   height:400px;
+   height:500px;
  }
  
  .business h2{
@@ -300,7 +293,10 @@ color:white;
    width:250px;
    height:35px;
    margin-bottom:15px;
+   border-bottom:2px solid maroon;
  }
+ 
+ 
   </style>
   
 </head>
@@ -393,7 +389,43 @@ color:white;
   <br>
     <input type="tel" placeholder="Enter Mob no"><br>
       <input type="text" placeholder="Enter Location"><br>
+      
       <input type="file" placeholder="Upload Cv"><br>
+      <select>
+        <option>Position</option>
+        <option>
+          Housekeeping
+        </option>
+        <option>
+          Hotel staff
+        </option>
+        <option>
+          Ward boy
+        </option>
+        <option>
+          Computer operator
+        </option>
+        <option>
+          Data entry Opearator </option>
+        <option>
+          Courier boy
+        </option>
+        <option>
+          Airport staff
+        </option>
+        <option>
+          Helper
+        </option>
+        <option>
+          Accountant
+        </option>
+        <option>
+          Office boy
+        </option>
+        <option>
+          Back office
+        </option>
+      </select><br>
       <button>Apply Now</button>
     </center>
     </form>
@@ -427,6 +459,8 @@ color:white;
               200+
             </option>
           </select><br>
+          <h3>Upload Business card</h3><br>
+          <input type="file" id="bcard">
           <button>Submit</button>
         </form>
       </center>
